@@ -9,9 +9,11 @@ import {
   Gradient,
   ShadowContainer,
   TitleBox,
+  Subtitle,
+  Artist,
+  TimeText,
 } from "./styles";
 import { Colors } from "@/constants/Colors";
-import { ThemedText } from "@/components/ThemedText";
 import { PlayingIcon } from "@/components/playing-icon";
 
 export type Props = {
@@ -34,15 +36,12 @@ export const TrackItem = React.memo(
               <TitleBox>
                 {isActive ? <PlayingIcon /> : null}
 
-                <ThemedText type="subtitle" numberOfLines={1}>
-                  {song.trackName}
-                </ThemedText>
+                <Subtitle numberOfLines={1}>{song.trackName}</Subtitle>
               </TitleBox>
-              <ThemedText
-                type="small"
+              <Artist
                 numberOfLines={1}
-              >{`${song.artistName} · ${song.primaryGenreName}`}</ThemedText>
-              <ThemedText type="small">{formattedLength}</ThemedText>
+              >{`${song.artistName} · ${song.primaryGenreName}`}</Artist>
+              <TimeText>{formattedLength}</TimeText>
             </FlexCol>
           </Container>
         </Gradient>

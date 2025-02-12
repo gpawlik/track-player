@@ -5,10 +5,10 @@ import TrackPlayer, {
   usePlaybackState,
   Event,
 } from "react-native-track-player";
+import styled from "styled-components/native";
 
 import { getSongs, setPlayingTrackId } from "@/state/songs/actions";
 import ParallaxScrollView from "@/components/parallax-scroll-view";
-import { ThemedText } from "@/components/ThemedText";
 import { NoTracks } from "@/components/empty-tracks";
 import { useDispatch, useSelector } from "react-redux";
 import { Song } from "@/state/songs/types";
@@ -20,6 +20,13 @@ import {
 } from "@/state/songs/selectors";
 import { TrackItem } from "@/components/track-item";
 import { MiniPlayer } from "@/components/mini-player";
+
+export const Subtitle = styled.Text`
+  color: ${({ theme }) => theme.colors.gray900};
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+`;
 
 export default function HomeScreen() {
   const dispatch = useDispatch();
@@ -110,9 +117,7 @@ export default function HomeScreen() {
         headerButtonName={buttonIcon}
         onPressHeaderButton={() => togglePlayPause(playbackState.state)}
       >
-        <ThemedText type="subtitle" style={styles.subtitle}>
-          {`${playlistTitle} (${songs.length} items)`}
-        </ThemedText>
+        <Subtitle>{`${playlistTitle} (${songs.length} items)`}</Subtitle>
 
         {songs.length ? (
           <FlatList

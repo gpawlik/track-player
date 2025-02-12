@@ -60,12 +60,7 @@ export default function ParallaxScrollView({
 
   return (
     <Container>
-      <StyledScrollView
-        ref={scrollRef}
-        scrollEventThrottle={16}
-        //scrollIndicatorInsets={{ bottom }}
-        // contentContainerStyle={{ paddingBottom: bottom }}
-      >
+      <StyledScrollView ref={scrollRef} scrollEventThrottle={16}>
         <Header
           style={[
             { backgroundColor: headerBackgroundColor[colorScheme] },
@@ -73,7 +68,7 @@ export default function ParallaxScrollView({
           ]}
         >
           {headerImage}
-          <Title type="title">My playlists</Title>
+          <Title>My playlists</Title>
         </Header>
         <Content>{children}</Content>
         {headerButtonName ? (
