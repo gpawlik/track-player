@@ -61,22 +61,24 @@ cd music-player
 # Install dependencies
 yarn install  # or npm install
 
-# Start the development server
-expo start --dev-client
 ```
 
 ### **Running on iOS**
 
+[Download](https://limewire.com/d/4a8bd6ff-ae35-4831-801a-60da7f95187d#X71tyXX8enHkMHOt_fH2REutRFKDOvCH0c-IQaZ-sjM) the build, unpack and install it on the simulator (by dragging it over)
+
 ```sh
-expo run:ios
+npx expo start --ios
 ```
 
 _(Requires a Mac with Xcode installed)_
 
 ### **Running on Android**
 
+[Download](https://expo.dev/accounts/gregpawlik/projects/gp-player/builds/34bb9e48-3bdc-43f4-af54-78e55f72be95) the build and install it on the emulator (by dragging it over)
+
 ```sh
-expo run:android
+npx expo start --android
 ```
 
 _(Requires Android Studio or a connected Android device)_
