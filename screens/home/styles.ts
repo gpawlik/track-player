@@ -8,3 +8,9 @@ export const Subtitle = styled.Text`
   font-weight: 600;
   margin-bottom: 4px;
 `;
+
+export const ParallaxImage = styled.View`
+  height: 100%;
+  width: 100%;
+  resize-mode: cover;
+`;
