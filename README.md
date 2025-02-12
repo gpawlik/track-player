@@ -29,6 +29,14 @@ An **Audio Player** app built with **Expo (Managed Workflow)** that allows users
 
 ---
 
+## 📹 Demo Videos
+
+### **📱 iOS App Demo**
+
+[![iOS Demo]](https://github.com/user-attachments/assets/c909f9e1-24f3-4646-950a-ca27c1830d79)
+
+---
+
 ## 📦 Key Libraries Used
 
 | Library                     | Purpose                                                     |
