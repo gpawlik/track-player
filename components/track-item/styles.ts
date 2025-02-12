@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { LinearGradient } from "expo-linear-gradient";
 
 export const ShadowContainer = styled.View`
-  shadow-color: ${({ theme }) => theme.colors.shadow};
+  shadow-color: ${({ theme }) => theme.colors.gray500};
   shadow-offset: 2px 4px;
   shadow-opacity: 0.1;
   shadow-radius: 6px;
@@ -16,7 +16,7 @@ export const Container = styled.TouchableOpacity`
   flex-direction: row;
   overglow: hidden;
   padding: 6px 8px;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const Gradient = styled(LinearGradient)`
@@ -40,4 +40,19 @@ export const TitleBox = styled.View`
   flex-direction: row;
   align-items: center;
   padding-right: 30px;
+`;
+
+export const Subtitle = styled.Text`
+  font-size: 20px;
+  font-weight: 600;
+`;
+
+export const Artist = styled.Text`
+  font-size: 12px;
+  margin-bottom: 4px;
+`;
+
+export const TimeText = styled.Text`
+  font-size: 12px;
+  color: ${({ theme }) => theme.colors.gray700};
 `;

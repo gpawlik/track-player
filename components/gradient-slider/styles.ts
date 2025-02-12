@@ -14,7 +14,6 @@ export const Container = styled.View`
 export const TimeLabel = styled.Text`
   color: ${({ theme }) => theme.colors.text};
   font-size: 12px;
-  margin-horizontal: 8px;
 `;
 
 export const SliderContainer = styled.View`

@@ -7,15 +7,16 @@ import TrackPlayer, {
   usePlaybackState,
 } from "react-native-track-player";
 
+import { formatTime } from "@/utils/time";
+
 import {
   Container,
   GradientFill,
   GradientTrack,
   SliderContainer,
   StyledSlider,
+  TimeLabel,
 } from "./styles";
-import { formatTime } from "@/utils/time";
-import { ThemedText } from "@/components/ThemedText";
 
 const MAX_DURATION = 100;
 
@@ -59,7 +60,7 @@ export const GradientSlider = () => {
 
   return (
     <Container>
-      <ThemedText type="small">{formatTime(position)}</ThemedText>
+      <TimeLabel>{formatTime(position)}</TimeLabel>
       <SliderContainer>
         <GradientTrack
           style={{
@@ -87,7 +88,7 @@ export const GradientSlider = () => {
           thumbTintColor="white"
         />
       </SliderContainer>
-      <ThemedText type="small">{formatTime(duration)}</ThemedText>
+      <TimeLabel>{formatTime(duration)}</TimeLabel>
     </Container>
   );
 };

@@ -1,13 +1,12 @@
 import styled from "styled-components/native";
 import Animated from "react-native-reanimated";
-import { ThemedView } from "@/components/ThemedView";
-import { ThemedText } from "@/components/ThemedText";
 import { LinearGradient } from "expo-linear-gradient";
 
 const HEADER_HEIGHT = 250;
 
-export const Container = styled(ThemedView)`
+export const Container = styled.View`
   flex: 1;
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const StyledScrollView = styled(Animated.ScrollView)`
@@ -18,19 +17,22 @@ export const Header = styled(Animated.View)`
   height: ${HEADER_HEIGHT}px;
 `;
 
-export const Content = styled(ThemedView)`
+export const Content = styled.View`
   flex: 1;
   padding: 20px;
   gap: 10px;
   overflow: hidden;
   padding-bottom: 80px;
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
-export const Title = styled(ThemedText)`
+export const Title = styled.Text`
   position: absolute;
   bottom: 20px;
   left: 20px;
-  color: #fff;
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 26px;
+  font-weight: 600;
 `;
 
 export const GradientFill = styled(LinearGradient)`
