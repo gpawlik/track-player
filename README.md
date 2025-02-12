@@ -35,6 +35,10 @@ An **Audio Player** app built with **Expo (Managed Workflow)** that allows users
 
 [![iOS Demo]](https://github.com/user-attachments/assets/c909f9e1-24f3-4646-950a-ca27c1830d79)
 
+### **🤖 Android App Demo**
+
+[![Android Demo]](https://github.com/user-attachments/assets/67a95488-f8d8-4621-b53f-71c5c65d6028)
+
 ---
 
 ## 📦 Key Libraries Used
@@ -121,6 +125,10 @@ yarn test  # or npm test
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img width="505" alt="Screenshot 2025-02-12 at 15 15 26" src="https://github.com/user-attachments/assets/78d62584-40dc-4bae-b8f3-40a06807f70c" /> | <img width="505" alt="Screenshot 2025-02-12 at 15 13 24" src="https://github.com/user-attachments/assets/2ae5a30f-09c9-415c-94b2-893eb90fcf55" /> |
 
+| Background Mode                                                                                                                                   | BackgroundMode                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="505" alt="Screenshot 2025-02-12 at 15 15 26" src="https://github.com/user-attachments/assets/b07d94f9-5a1a-4744-9d7b-28b32a2f2675" /> | <img width="505" alt="Screenshot 2025-02-12 at 15 13 24" src="https://github.com/user-attachments/assets/7772487a-619c-425c-a554-3c3802b6b1ea" /> |
+
 ### **Android**
 
 | Home Screen                                                                                                                                       | Playing Song                                                                                                                                      |
@@ -134,6 +142,10 @@ yarn test  # or npm test
 | Dark Mode                                                                                                                                         | Dark Mode                                                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img width="525" alt="Screenshot 2025-02-12 at 15 17 44" src="https://github.com/user-attachments/assets/3f75f745-762a-47d9-931a-fe23a4a9863d" /> | <img width="525" alt="Screenshot 2025-02-12 at 15 17 54" src="https://github.com/user-attachments/assets/ffc15437-9b59-4648-93ab-323cf5145bec" /> |
+
+| Background Mode                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="505" alt="Screenshot 2025-02-12 at 15 15 26" src="https://github.com/user-attachments/assets/03b8f53b-4300-4b72-8eaa-c6f111c0fb19" /> |
 
 ---
 
