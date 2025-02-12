@@ -25,9 +25,9 @@ import { useTheme } from "styled-components/native";
 
 import { getPlaylistTitle } from "@/state/songs/selectors";
 import { Song } from "@/components/song";
-import { Colors } from "@/constants/Colors";
 import { GradientSlider } from "@/components/gradient-slider";
 import { PlayButton } from "@/components/play-button";
+import { gradient } from "@/styles/theme";
 
 import {
   Container,
@@ -127,10 +127,7 @@ export const PlayerComponent = React.memo(() => {
             {activeTrack ? <Song song={activeTrack} /> : null}
           </AnimatedContainer>
           <GradientSlider />
-          <RowContainer
-            colors={Colors.light.gradient}
-            start={{ x: 0.3, y: 0.1 }}
-          >
+          <RowContainer colors={gradient} start={{ x: 0.3, y: 0.1 }}>
             <ActionButton onPress={onSwipePrev} isDisabled={isFirstTrack}>
               <Ionicons
                 name="play-skip-back"

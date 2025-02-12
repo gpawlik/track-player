@@ -48,6 +48,8 @@ export const colors = {
   orange: "#EF4444",
 } as const;
 
+export const gradient = ["#FF913E", "#EB3B9E", "#A03EFF"];
+
 export const darkThemeColors = {
   white: "#121212",
   black: "#FFFFFF",

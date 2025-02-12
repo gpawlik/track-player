@@ -1,6 +1,9 @@
 import * as React from "react";
+
 import { Song } from "@/state/songs/types";
 import { msToHMS } from "@/utils/time";
+import { gradient } from "@/styles/theme";
+import { PlayingIcon } from "@/components/playing-icon";
 
 import {
   Container,
@@ -13,8 +16,6 @@ import {
   Artist,
   TimeText,
 } from "./styles";
-import { Colors } from "@/constants/Colors";
-import { PlayingIcon } from "@/components/playing-icon";
 
 export type Props = {
   song: Song;
@@ -29,7 +30,7 @@ export const TrackItem = React.memo(
 
     return (
       <ShadowContainer>
-        <Gradient colors={Colors.light.gradient} start={{ x: 0.3, y: 0.1 }}>
+        <Gradient colors={gradient} start={{ x: 0.3, y: 0.1 }}>
           <Container onPress={onSongPress}>
             <AlbumCover source={{ uri: song.artworkUrl100 }} />
             <FlexCol>

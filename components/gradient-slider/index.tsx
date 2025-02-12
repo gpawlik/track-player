@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Colors } from "@/constants/Colors";
 import { Animated, Easing } from "react-native";
 import TrackPlayer, {
   State as TrackPlayerState,
@@ -8,6 +7,7 @@ import TrackPlayer, {
 } from "react-native-track-player";
 
 import { formatTime } from "@/utils/time";
+import { gradient } from "@/styles/theme";
 
 import {
   Container,
@@ -71,10 +71,7 @@ export const GradientSlider = () => {
             }),
           }}
         >
-          <GradientFill
-            colors={Colors.light.gradient}
-            start={{ x: 0.2, y: 0.1 }}
-          />
+          <GradientFill colors={gradient} start={{ x: 0.2, y: 0.1 }} />
         </GradientTrack>
 
         <StyledSlider
