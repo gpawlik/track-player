@@ -5,8 +5,11 @@ import Animated, {
   useAnimatedStyle,
   useScrollViewOffset,
 } from "react-native-reanimated";
+import { useColorScheme } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
-import { useColorScheme } from "@/hooks/useColorScheme";
+import { colors, gradient } from "@/styles/theme";
+
 import {
   Container,
   Header,
@@ -16,8 +19,6 @@ import {
   GradientFill,
   ButtonPressable,
 } from "./styles";
-import { Colors } from "@/constants/Colors";
-import { Ionicons } from "@expo/vector-icons";
 
 const HEADER_HEIGHT = 250;
 
@@ -73,13 +74,10 @@ export default function ParallaxScrollView({
         <Content>{children}</Content>
         {headerButtonName ? (
           <ButtonPressable onPress={onPressHeaderButton}>
-            <GradientFill
-              colors={Colors.light.gradient}
-              start={{ x: 0.2, y: 0.1 }}
-            >
+            <GradientFill colors={gradient} start={{ x: 0.2, y: 0.1 }}>
               <Ionicons
                 name={headerButtonName}
-                color={Colors.light.background}
+                color={colors.white}
                 size={50}
               />
             </GradientFill>
