@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ActivityIndicator, FlatList, Image, StyleSheet } from "react-native";
+import { ActivityIndicator, FlatList } from "react-native";
 import TrackPlayer, {
   State as TrackPlayerState,
   usePlaybackState,
@@ -20,7 +20,7 @@ import {
 import { TrackItem } from "@/components/track-item";
 import { MiniPlayer } from "@/components/mini-player";
 
-import { Subtitle } from "./styles";
+import { Subtitle, ParallaxImage } from "./styles";
 
 export const Home = () => {
   const dispatch = useDispatch();
@@ -103,10 +103,7 @@ export const Home = () => {
       <ParallaxScrollView
         headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
         headerImage={
-          <Image
-            source={require("@/assets/images/cover.jpg")}
-            style={styles.image}
-          />
+          <ParallaxImage source={require("@/assets/images/cover.jpg")} />
         }
         headerButtonName={buttonIcon}
         onPressHeaderButton={() => togglePlayPause(playbackState.state)}
@@ -139,14 +136,3 @@ export const Home = () => {
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  image: {
-    height: "100%",
-    width: "100%",
-    resizeMode: "cover",
-  },
-  subtitle: {
-    marginBottom: 4,
-  },
-});
