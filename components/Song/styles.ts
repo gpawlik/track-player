@@ -1,6 +1,8 @@
 import styled from "styled-components/native";
 import { Image } from "expo-image";
 
+import { Theme } from "@/styles/theme";
+
 export const Container = styled.View`
   margin: 10px 5px;
   padding: 5px 20px;
@@ -22,11 +24,11 @@ export const Title = styled.Text`
   font-weight: 600;
   margin-bottom: 4px;
   text-align: center;
-  color: ${({ theme }) => theme.colors.gray900};
+  color: ${({ theme }: Theme) => theme.colors.gray900};
 `;
 
 export const Subtitle = styled.Text`
   font-size: 18px;
   font-weight: 400;
-  color: ${({ theme }) => theme.colors.gray900};
+  color: ${({ theme }: Theme) => theme.colors.gray900};
 `;

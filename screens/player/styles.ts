@@ -3,6 +3,8 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Dimensions } from "react-native";
 import Animated from "react-native-reanimated";
 
+import { Theme } from "@/styles/theme";
+
 const { width } = Dimensions.get("window");
 
 export const HeaderBox = styled.View<{ topPadding: number }>`
@@ -20,12 +22,12 @@ export const HeaderTitle = styled.Text`
   font-size: 14px;
   text-align: center;
   font-weight: 600;
-  color: ${({ theme }) => theme.colors.gray900};
+  color: ${({ theme }: Theme) => theme.colors.gray900};
 `;
 
 export const Container = styled.View`
   flex: 1;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }: Theme) => theme.colors.white};
 `;
 
 export const PlayerContainer = styled.View`
@@ -46,10 +48,14 @@ export const RowContainer = styled(LinearGradient)`
   min-height: 81px;
 `;
 
+type ButtonProps = {
+  isDisabled: boolean;
+};
+
 export const ActionButton = styled.Pressable<{ isDisabled: boolean }>`
   justify-content: center;
   margin-horizontal: 15px;
-  opacity: ${({ isDisabled }) => (isDisabled ? 0.7 : 1)};
+  opacity: ${({ isDisabled }: ButtonProps) => (isDisabled ? 0.7 : 1)};
 `;
 
 export const AnimatedContainer = styled(Animated.View)`

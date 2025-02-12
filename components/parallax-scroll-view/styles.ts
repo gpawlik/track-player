@@ -2,13 +2,13 @@ import styled from "styled-components/native";
 import Animated from "react-native-reanimated";
 import { LinearGradient } from "expo-linear-gradient";
 
-import { colors } from "@/styles/theme";
+import { colors, Theme } from "@/styles/theme";
 
 const HEADER_HEIGHT = 250;
 
 export const Container = styled.View`
   flex: 1;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }: Theme) => theme.colors.white};
 `;
 
 export const StyledScrollView = styled(Animated.ScrollView)`
@@ -25,7 +25,7 @@ export const Content = styled.View`
   gap: 10px;
   overflow: hidden;
   padding-bottom: 80px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }: Theme) => theme.colors.white};
 `;
 
 export const Title = styled.Text`

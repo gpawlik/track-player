@@ -1,4 +1,4 @@
-import "styled-components";
+import "styled-components/native";
 
 export const colors = {
   white: "#FFFFFF",
@@ -46,7 +46,7 @@ export const colors = {
   zinc700: "#3F3F46",
   transparent: "transparent",
   orange: "#EF4444",
-} as const;
+};
 
 export const gradient = ["#FF913E", "#EB3B9E", "#A03EFF"];
 
@@ -96,7 +96,7 @@ export const darkThemeColors = {
   zinc700: "#D1D1E1",
   transparent: "transparent",
   orange: "#FF6B6B",
-} as const;
+};
 
 export const fontSizes = {
   fs0: "10px",
@@ -117,7 +117,7 @@ export const fontSizes = {
   fs15: "76px",
   fs16: "84px",
   fs17: "92px",
-} as const;
+};
 
 export const spacers = {
   ss0: "0px",
@@ -133,7 +133,7 @@ export const spacers = {
   ss10: "48px",
   ss11: "64px",
   ss12: "72px",
-} as const;
+};
 
 export const lineHeights = {
   lh1: "18px",
@@ -145,7 +145,7 @@ export const lineHeights = {
   lh7: "52px",
   lh8: "64px",
   lh9: "76px",
-} as const;
+};
 
 export type Colors = typeof colors;
 export type DarkColors = typeof darkThemeColors;
@@ -154,25 +154,43 @@ export type FontSizes = typeof fontSizes;
 export type Spacers = typeof spacers;
 export type LineHeights = typeof lineHeights;
 
+// export interface Theme {
+//   colors: Colors;
+//   fontSizes: FontSizes;
+//   spacers: Spacers;
+//   lineHeights: LineHeights;
+// }
+
 export const lightTheme = {
   colors,
   fontSizes,
   spacers,
   lineHeights,
-} as const;
+};
 
 export const darkTheme = {
   colors: darkThemeColors,
   fontSizes,
   spacers,
   lineHeights,
-} as const;
+};
 
-declare module "styled-components" {
+export type ThemeType = typeof lightTheme;
+
+export type Theme = {
+  theme: {
+    colors: typeof colors;
+    fontSizes: typeof fontSizes;
+    spacers: typeof spacers;
+    lineHeights: typeof lineHeights;
+  };
+};
+
+declare module "styled-components/native" {
   export interface DefaultTheme {
-    colors: Colors;
-    fontSizes: FontSizes;
-    spacers: Spacers;
-    lineHeights: LineHeights;
+    colors: typeof colors;
+    fontSizes: typeof fontSizes;
+    spacers: typeof spacers;
+    lineHeights: typeof lineHeights;
   }
 }

@@ -1,6 +1,6 @@
 # Audio Player
 
-An **Audio Player** app built with **Expo (Managed Workflow)** that allows users to play, pause, skip, and navigate through a playlist of five pre-loaded songs. Additionally the app supports **background audio playback**, **gesture-based navigation (iOS)**, **player state persistance**, and works **seamlessly on both iOS and Android**.
+An **Audio Player** app built with **Expo (Managed Workflow)** that allows users to play, pause, skip, and navigate through a playlist of five pre-loaded songs. Additionally the app supports **background audio playback**, **gesture-based navigation (iOS)**, **player state persistance**, **dark mode** and works **seamlessly on both iOS and Android**.
 
 ---
 

@@ -3,6 +3,8 @@ import { LinearGradient } from "expo-linear-gradient";
 import styled from "styled-components/native";
 import { Animated, Platform } from "react-native";
 
+import { Theme } from "@/styles/theme";
+
 const isAndroid = Platform.OS === "android";
 
 export const Container = styled.View`
@@ -12,7 +14,7 @@ export const Container = styled.View`
 `;
 
 export const TimeLabel = styled.Text`
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }: Theme) => theme.colors.gray900};
   font-size: 12px;
 `;
 
