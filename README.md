@@ -99,15 +99,23 @@ yarn test  # or npm test
 
 ### **iOS**
 
-| Home Screen                                  | Playing Song                                 | Playlist View                                | Background Mode                              |
-| -------------------------------------------- | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- |
-| ![iOS Screenshot 1](path/to/screenshot1.png) | ![iOS Screenshot 2](path/to/screenshot2.png) | ![iOS Screenshot 3](path/to/screenshot3.png) | ![iOS Screenshot 4](path/to/screenshot4.png) |
+| Home Screen                                                                                                                                       | Playing Song                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="505" alt="Screenshot 2025-02-12 at 10 26 51" src="https://github.com/user-attachments/assets/01973ba8-ad0b-430f-96cd-edee50cb9c34" /> | <img width="505" alt="Screenshot 2025-02-12 at 10 27 03" src="https://github.com/user-attachments/assets/d6a83dbe-1309-4014-aefc-95cf42b23be8" /> |
+
+| Expanded Player                                                                                                                                   | Empty State & Errors                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="505" alt="Screenshot 2025-02-12 at 10 27 12" src="https://github.com/user-attachments/assets/902a96e3-f958-4c93-b709-94a9f81dbac0" /> | <img width="505" alt="Screenshot 2025-02-12 at 11 32 15" src="https://github.com/user-attachments/assets/85ef862b-68f7-4ce6-a8f5-774a47dbff99" /> |
 
 ### **Android**
 
-| Home Screen                                      | Playing Song                                     | Playlist View                                    | Background Mode                                  |
-| ------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ |
-| ![Android Screenshot 1](path/to/screenshot1.png) | ![Android Screenshot 2](path/to/screenshot2.png) | ![Android Screenshot 3](path/to/screenshot3.png) | ![Android Screenshot 4](path/to/screenshot4.png) |
+| Home Screen                                                                                                                                       | Playing Song                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="525" alt="Screenshot 2025-02-12 at 10 27 50" src="https://github.com/user-attachments/assets/802b84a3-ab4f-4f9a-84d4-ba5f41d32148" /> | <img width="525" alt="Screenshot 2025-02-12 at 10 27 42" src="https://github.com/user-attachments/assets/e99d4511-30cd-4432-8998-b759f2801f7e" /> |
+
+| Expanded Player                                                                                                                                   | Empty State & Errors                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="525" alt="Screenshot 2025-02-12 at 10 27 30" src="https://github.com/user-attachments/assets/1690028d-e7f0-4209-8d11-6a44e061cfac" /> | <img width="525" alt="Screenshot 2025-02-12 at 11 46 43" src="https://github.com/user-attachments/assets/fa43c255-acd0-43f3-aeeb-fae08f06dcb7" /> |
 
 ---
 
