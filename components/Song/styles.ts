@@ -22,9 +22,11 @@ export const Title = styled.Text`
   font-weight: 600;
   margin-bottom: 4px;
   text-align: center;
+  color: ${({ theme }) => theme.colors.gray900};
 `;
 
 export const Subtitle = styled.Text`
   font-size: 18px;
   font-weight: 400;
+  color: ${({ theme }) => theme.colors.gray900};
 `;

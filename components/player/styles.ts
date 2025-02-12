@@ -20,11 +20,12 @@ export const HeaderTitle = styled.Text`
   font-size: 14px;
   text-align: center;
   font-weight: 600;
+  color: ${({ theme }) => theme.colors.gray900};
 `;
 
 export const Container = styled.View`
   flex: 1;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const PlayerContainer = styled.View`
