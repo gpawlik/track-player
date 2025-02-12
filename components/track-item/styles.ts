@@ -45,11 +45,13 @@ export const TitleBox = styled.View`
 export const Subtitle = styled.Text`
   font-size: 20px;
   font-weight: 600;
+  color: ${({ theme }) => theme.colors.gray900};
 `;
 
 export const Artist = styled.Text`
   font-size: 12px;
   margin-bottom: 4px;
+  color: ${({ theme }) => theme.colors.gray900};
 `;
 
 export const TimeText = styled.Text`

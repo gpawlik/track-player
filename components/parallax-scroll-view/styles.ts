@@ -2,6 +2,8 @@ import styled from "styled-components/native";
 import Animated from "react-native-reanimated";
 import { LinearGradient } from "expo-linear-gradient";
 
+import { colors } from "@/styles/theme";
+
 const HEADER_HEIGHT = 250;
 
 export const Container = styled.View`
@@ -30,7 +32,7 @@ export const Title = styled.Text`
   position: absolute;
   bottom: 20px;
   left: 20px;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${colors.white};
   font-size: 26px;
   font-weight: 600;
 `;

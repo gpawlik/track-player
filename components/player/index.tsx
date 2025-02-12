@@ -21,6 +21,7 @@ import {
 import { router } from "expo-router";
 import { useSelector } from "react-redux";
 import { Ionicons } from "@expo/vector-icons";
+import { useTheme } from "styled-components/native";
 
 import { getPlaylistTitle } from "@/state/songs/selectors";
 import { Song } from "@/components/song";
@@ -44,6 +45,7 @@ export const PlayerComponent = React.memo(() => {
   const { state } = usePlaybackState();
   const { top } = useSafeAreaInsets();
   const activeTrack = useActiveTrack();
+  const theme = useTheme();
 
   const isAndroid = Platform.OS === "android";
   const isPlaying = state === PlaybackState.Playing;
@@ -114,7 +116,7 @@ export const PlayerComponent = React.memo(() => {
       <Container>
         <HeaderBox topPadding={topPadding}>
           <HeaderIcon onPress={router.back}>
-            <Ionicons name={headerIcon} size={22} />
+            <Ionicons name={headerIcon} size={22} color={theme.colors.black} />
           </HeaderIcon>
           <HeaderTitle>{playlistTitle}</HeaderTitle>
           <HeaderIcon />
@@ -132,7 +134,7 @@ export const PlayerComponent = React.memo(() => {
             <ActionButton onPress={onSwipePrev} isDisabled={isFirstTrack}>
               <Ionicons
                 name="play-skip-back"
-                color={Colors.dark.text}
+                color={theme.colors.white}
                 size={30}
               />
             </ActionButton>
@@ -141,14 +143,14 @@ export const PlayerComponent = React.memo(() => {
               state={state}
               onPress={togglePlayPause}
               isCircle
-              color={Colors.dark.text}
+              color={theme.colors.white}
               size={60}
             />
 
             <ActionButton onPress={onSwipeNext} isDisabled={isLastTrack}>
               <Ionicons
                 name="play-skip-forward"
-                color={Colors.dark.text}
+                color={theme.colors.white}
                 size={30}
               />
             </ActionButton>

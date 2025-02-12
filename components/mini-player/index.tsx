@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Animated } from "react-native";
+import { Animated, Pressable } from "react-native";
 import { router } from "expo-router";
 import TrackPlayer, {
   State as TrackPlayerState,
@@ -61,7 +61,10 @@ export const MiniPlayer = () => {
       }}
     >
       <Container bottomSpacing={bottom}>
-        <TrackImage source={{ uri: activeTrack.artwork }} />
+        <Pressable onPress={onSongPress}>
+          <TrackImage source={{ uri: activeTrack.artwork }} />
+        </Pressable>
+
         <SongInfo onPress={onSongPress}>
           <SongTitle numberOfLines={1}>{activeTrack.title}</SongTitle>
           <ArtistName numberOfLines={1}>{activeTrack.artist}</ArtistName>

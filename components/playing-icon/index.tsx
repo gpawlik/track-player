@@ -4,10 +4,12 @@ import {
   usePlaybackState,
   State as TrackPlayerState,
 } from "react-native-track-player";
+import { useTheme } from "styled-components/native";
 
 export const PlayingIcon = () => {
   const animation = React.useRef<LottieView>(null);
   const playbackState = usePlaybackState();
+  const theme = useTheme();
 
   React.useEffect(() => {
     if (playbackState.state === TrackPlayerState.Playing) {
@@ -19,12 +21,12 @@ export const PlayingIcon = () => {
 
   return (
     <LottieView
-      autoPlay
+      autoPlay={false}
       ref={animation}
       style={{
         width: 20,
         height: 20,
-        backgroundColor: "#fff",
+        backgroundColor: theme.colors.white,
         marginBottom: 5,
         marginRight: 5,
       }}

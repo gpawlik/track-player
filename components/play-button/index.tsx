@@ -2,6 +2,7 @@ import * as React from "react";
 import { ActivityIndicator, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { State } from "react-native-track-player";
+import { useTheme } from "styled-components/native";
 
 import { LoadingBox } from "./styles";
 
@@ -20,6 +21,7 @@ export const PlayButton = ({
   color = "white",
   onPress,
 }: Props) => {
+  const theme = useTheme();
   const isPlaying = state === State.Playing;
   const isLoading = [State.Buffering, State.Loading].includes(state as State);
 
@@ -31,7 +33,7 @@ export const PlayButton = ({
   if (isLoading) {
     return (
       <LoadingBox size={size}>
-        <ActivityIndicator color="white" size={indicatorSize} />
+        <ActivityIndicator color={theme.colors.white} size={indicatorSize} />
       </LoadingBox>
     );
   }
