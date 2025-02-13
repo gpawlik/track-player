@@ -162,7 +162,7 @@ yarn test  # or npm test
 
 - **Finding a decent free API for the audio content**: Most of the APIs offer only 30 seconds preview and the artworks are low quality
 - **Making `react-native-track-player` work with Expo**: The new architecture is not yet supported in the newest version of RNTP
-- **Creating a smooth "scrubber" component**: Needed to find a balance betwen the performance and visual sensation of a smotth movement
+- **Creating a smooth "scrubber" component**: Needed to find a balance betwen the performance and visual sensation of a smooth movement
 
 ---
 
